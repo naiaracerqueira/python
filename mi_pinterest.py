@@ -2,8 +2,8 @@
 from py3pin.Pinterest import Pinterest
 
 #Create new instance of the API
-pinterest = Pinterest(email='your-email', 
-                      password='your-password', 
+pinterest = Pinterest(email='your-email',
+                      password='your-password',
                       username='your-username',
                       cred_root='cache')
 

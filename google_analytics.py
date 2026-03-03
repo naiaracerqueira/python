@@ -6,7 +6,8 @@ import gspread
 import lidaSheets
 import time
 
-idItatiaia = "188291597"
+idItatiaia = "XXXXXXXXXXXXXXX"
+
 #Cria a query a ser usada
 def report():
     analytics = login.analytics()
@@ -22,7 +23,7 @@ def report():
         }]
         }
     ).execute()
-    
+
 #executa e coleta a resposta
 def resposta(query):
     listaResposta = []

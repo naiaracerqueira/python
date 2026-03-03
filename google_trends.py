@@ -15,7 +15,7 @@ def login():
     cred_loc = PATH+"/credentials.json"
     credentials = service_account.Credentials.from_service_account_file(cred_loc)
     scoped_credentials = credentials.with_scopes(["https://www.googleapis.com/auth/analytics.readonly",
-                                                  "https://spreadsheets.google.com/feeds", 
+                                                  "https://spreadsheets.google.com/feeds",
                                                   "https://www.googleapis.com/auth/drive"])
     gc = gspread.authorize(scoped_credentials)
     return gc

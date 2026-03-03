@@ -22,5 +22,7 @@ logging.warning('And this, too')
 
 # Formatação de data
 logging.basicConfig(format='%(asctime)s %(message)s')
-
 logging.warning('is when this event was logged.')
+
+# Para AWS
+logging.basicConfig(format="%(asctime)s [%(levelname)s] %(name)s: %(message)s", level=logging.INFO)
