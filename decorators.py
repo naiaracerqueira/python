@@ -56,4 +56,4 @@ def add_fudge(func):
 def get_ice_cream(flavor):
     print(f"Here is your {flavor} ice cream 🍨")
 
-get_ice_cream("vanilla") # um argumento
+get_ice_cream("vanilla") # um argumento, posso passar como "vanilla" (args recebe) ou flavor="vanilla" (kwargs recebe)
