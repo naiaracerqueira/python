@@ -57,3 +57,27 @@ def get_ice_cream(flavor):
     print(f"Here is your {flavor} ice cream 🍨")
 
 get_ice_cream("vanilla") # um argumento, posso passar como "vanilla" (args recebe) ou flavor="vanilla" (kwargs recebe)
+
+
+##################################
+
+def add_sprinkles(func):
+    def wrapper(*args, **kwargs):
+        print("*You add sprinkles 🎊*")
+        return func(*args, **kwargs) # tem que ter o retorno
+    return wrapper
+
+def add_fudge(func):
+    def wrapper(*args, **kwargs):
+        print("*You add fudge 🍫*")
+        return func(*args, **kwargs) # tem que ter o retorno
+    return wrapper
+
+@add_sprinkles
+@add_fudge
+def get_ice_cream(flavor):
+    print(f"Here is your {flavor} ice cream 🍨")
+    return "I love ice cream!" # Quando a função original retorna algo, a wrapper tem que retornar o mesmo valor para que o resultado seja o mesmo
+
+result = get_ice_cream("vanilla")
+print(result)
