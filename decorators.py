@@ -46,7 +46,7 @@ def add_sprinkles(func):
     return wrapper
 
 def add_fudge(func):
-    def wrapper(*args, **kwargs):
+    def wrapper(*args, **kwargs): # args e kwargs permite que ele receba qualquer função com qualquer numero de argumentos
         print("*You add fudge 🍫*")
         func(*args, **kwargs)
     return wrapper
