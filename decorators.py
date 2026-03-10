@@ -1,6 +1,7 @@
 # Decorator is a function that adds behavior to a function without modifying the function itself
+# Fontes:
 # https://www.youtube.com/watch?v=U-G-mSd4KAE
-
+# https://www.youtube.com/watch?v=3tyaO-OE0K0
 
 # Func 1: the decorator function that takes a function as an argument and returns a new function that adds behavior to the original function
 def add_sprinkles(func):
